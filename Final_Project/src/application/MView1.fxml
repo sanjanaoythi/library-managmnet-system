@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="715.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MViewController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d1e9ff" height="556.0" layoutX="14.0" layoutY="19.0" stroke="BLACK" strokeType="INSIDE" width="685.0" />
+      <Label layoutX="14.0" layoutY="26.0" text="MEMBER VIEW">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="20.0" layoutY="167.0" mnemonicParsing="false" onAction="#specificItemList" prefHeight="30.0" prefWidth="226.0" text="VIEW SPECIFIC ITEM LIST" textFill="#1736e4">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="20.0" layoutY="238.0" mnemonicParsing="false" onAction="#allItemList" prefHeight="30.0" prefWidth="226.0" text="VIEW ALL ITEM" textFill="#231ddd">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="20.0" layoutY="311.0" mnemonicParsing="false" onAction="#search" prefHeight="30.0" prefWidth="226.0" text="SEARCH" textFill="#a812a5">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="36.0" layoutY="412.0" mnemonicParsing="false" onAction="#home" prefHeight="30.0" prefWidth="126.0" text="HOMEPAGE" textFill="#078618">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <ListView fx:id="list" layoutX="259.0" layoutY="73.0" prefHeight="375.0" prefWidth="436.0" />
+      <TextField fx:id="category" layoutX="106.0" layoutY="105.0" />
+      <Label layoutX="31.0" layoutY="109.0" text="CATEGORY:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="526.0" layoutY="457.0" mnemonicParsing="false" onAction="#remove" text="REMOVE FROM LISTVIEW" />
+      <Label fx:id="msg" layoutX="73.0" layoutY="493.0" prefHeight="53.0" prefWidth="569.0" />
+   </children>
+</AnchorPane>

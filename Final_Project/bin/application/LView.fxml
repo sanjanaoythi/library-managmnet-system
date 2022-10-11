@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="553.0" prefWidth="664.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LViewController">
+   <children>
+      <Label layoutX="37.0" layoutY="21.0" prefHeight="39.0" prefWidth="150.0" text="VIew(Librarian)">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="21.0" layoutY="379.0" mnemonicParsing="false" onAction="#allItem" prefHeight="35.0" prefWidth="204.0" text="VIEW ALL ITEMS">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="21.0" layoutY="328.0" mnemonicParsing="false" onAction="#specificItem" prefHeight="35.0" prefWidth="204.0" text="VIEW ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="21.0" layoutY="233.0" mnemonicParsing="false" onAction="#checkOutOfMember" prefHeight="35.0" prefWidth="204.0" text="CHECKOUT RECORDS">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="21.0" layoutY="131.0" mnemonicParsing="false" onAction="#checkOutOfItem" prefHeight="35.0" prefWidth="204.0" text="CHECKOUT RECORD">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="46.0" layoutY="92.0" text="ITEM ID:">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="itemId" layoutX="107.0" layoutY="90.0" prefHeight="25.0" prefWidth="138.0" />
+      <TextField fx:id="memberId" layoutX="107.0" layoutY="193.0" prefHeight="25.0" prefWidth="138.0" />
+      <TextField fx:id="category" layoutX="101.0" layoutY="287.0" prefHeight="25.0" prefWidth="138.0" />
+      <Label layoutX="25.0" layoutY="195.0" text="MEMBER ID:">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="290.0" text="ITEM TYPE:">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <ListView fx:id="list" layoutX="257.0" layoutY="80.0" prefHeight="375.0" prefWidth="383.0" />
+      <Button layoutX="25.0" layoutY="490.0" mnemonicParsing="false" onAction="#clickHome" text="HOMEPAGE" textFill="#a16565">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="532.0" layoutY="26.0" mnemonicParsing="false" onAction="#clickOption" text="OPTIONS">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="msg" layoutX="210.0" layoutY="486.0" prefHeight="39.0" prefWidth="430.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="510.0" layoutY="455.0" mnemonicParsing="false" onAction="#remove" text="REMOVE FROM LIST" />
+   </children>
+</Pane>
